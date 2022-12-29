@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/apps/*",
+    "packages/configs/*",
+    "packages/design/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "release": "turbo run build --filter=packages/docs && changeset publish"
+  },
+  "devDependencies": {
+    "turbo": "1.6.3"
+  }
+}

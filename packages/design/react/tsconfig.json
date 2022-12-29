@@ -1,0 +1,4 @@
+{
+  "extends": "@sothen-mfe/ts-config/react.json",
+  "include": ["src"]
+}
