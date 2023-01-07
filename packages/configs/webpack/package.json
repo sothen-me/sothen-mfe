@@ -4,6 +4,7 @@
   "license": "MIT",
   "private": true,
 	"devDependencies": {
+    "@sothen-mfe/eslint-config": "*",
 		"html-webpack-plugin": "5.3.1 ",
 		"webpack": "^5.67.0",
 		"webpack-cli": "^4.9.2",

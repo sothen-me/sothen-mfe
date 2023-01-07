@@ -9,9 +9,9 @@
     "clean": "rm -rf dist"
   },
   "devDependencies": {
+    "@sothen-mfe/eslint-config": "*",
     "@sothen-mfe/ts-config": "*",
     "@sothen-mfe/webpack": "*",
-    "@sothen/eslint-config": "0.0.2",
     "@types/node": "^15.0.3",
     "@types/react": "^18.0.20",
     "@types/react-dom": "^18.0.6",

@@ -15,8 +15,8 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@sothen-mfe/eslint-config": "*",
     "@sothen-mfe/ts-config": "*",
-    "@sothen/eslint-config": "0.0.2",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.8",
     "react": "^18.2.0",

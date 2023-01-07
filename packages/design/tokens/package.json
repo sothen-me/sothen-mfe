@@ -15,7 +15,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@sothen/eslint-config": "0.0.2",
+    "@sothen-mfe/eslint-config": "*",
     "@sothen-mfe/ts-config": "*",
     "tsup": "^6.4.0",
     "typescript": "^4.8.4"

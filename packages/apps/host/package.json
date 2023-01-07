@@ -8,7 +8,7 @@
     "clean": "rm -rf dist"
   },
   "devDependencies": {
-    "@sothen/eslint-config": "0.0.2",
+    "@sothen-mfe/eslint-config": "*",
     "@sothen-mfe/ts-config": "*",
     "@sothen-mfe/webpack": "*",
     "@types/node": "^15.0.3",

@@ -11,7 +11,7 @@
     "@types/node": "^15.0.3",
     "@types/react": "^18.0.20",
     "@types/react-dom": "^18.0.6",
-    "@sothen/eslint-config": "0.0.2",
+    "@sothen-mfe/eslint-config": "*",
     "@sothen-mfe/ts-config": "*",
     "@sothen-mfe/webpack": "*",
     "html-webpack-plugin": "5.3.1 ",
