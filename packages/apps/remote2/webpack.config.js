@@ -1,8 +1,8 @@
-const { ModuleFederationPlugin } = require("webpack").container;
-const { merge } = require('webpack-merge');
-const commonWebpack = require('@sothen-mfe/webpack/react.config');
+const { ModuleFederationPlugin } = require('webpack').container
+const { merge } = require('webpack-merge')
+const commonWebpack = require('@sothen-mfe/webpack/react.config')
 
-const deps = require("./package.json").dependencies;
+const deps = require('./package.json').dependencies
 
 module.exports = merge(commonWebpack, {
   devServer: {
@@ -10,25 +10,25 @@ module.exports = merge(commonWebpack, {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: "remote2",
-      filename: "remoteEntry.js",
+      name: 'remote2',
+      filename: 'remoteEntry.js',
       exposes: {
-        "./App": "./src/App",
+        './App': './src/App',
       },
       shared: {
         ...deps,
         react: { singleton: true, eager: true, requiredVersion: deps.react },
-        "react-dom": {
+        'react-dom': {
           singleton: true,
           eager: true,
-          requiredVersion: deps["react-dom"],
+          requiredVersion: deps['react-dom'],
         },
-        "react-router-dom": {
+        'react-router-dom': {
           singleton: true,
           eager: true,
-          requiredVersion: deps["react-router-dom"],
+          requiredVersion: deps['react-router-dom'],
         },
       },
     }),
   ],
-});
+})
