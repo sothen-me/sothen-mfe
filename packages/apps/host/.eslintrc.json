@@ -1,0 +1,3 @@
+{
+  "extends": "@sothen/eslint-config/react"
+}

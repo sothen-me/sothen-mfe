@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react'
 
 type ContainerAppProps = {
-  AppOne: React.LazyExoticComponent<React.ComponentType<{}>>;
-  AppTwo: React.LazyExoticComponent<React.ComponentType<{}>>;
-};
+  AppOne: React.LazyExoticComponent<React.ComponentType<{}>>
+  AppTwo: React.LazyExoticComponent<React.ComponentType<{}>>
+}
 
 export const ContainerApp = ({ AppOne, AppTwo }: ContainerAppProps) => {
   return (
@@ -28,5 +28,5 @@ export const ContainerApp = ({ AppOne, AppTwo }: ContainerAppProps) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
