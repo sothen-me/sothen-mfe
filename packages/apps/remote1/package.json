@@ -11,6 +11,8 @@
     "@types/node": "^15.0.3",
     "@types/react": "^18.0.20",
     "@types/react-dom": "^18.0.6",
+    "@sothen-mfe/ts-config": "*",
+    "@sothen-mfe/webpack": "*",
     "html-webpack-plugin": "5.3.1 ",
     "ts-loader": "^9.1.2",
     "typescript": "^4.2.4",

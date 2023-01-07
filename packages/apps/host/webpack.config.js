@@ -1,50 +1,19 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { ModuleFederationPlugin } = require("webpack").container;
-const deps = require("./package.json").dependencies;
-const path = require('path');
 require("dotenv").config({ path: "./.env" });
+const { merge } = require('webpack-merge');
+const commonWebpack = require('@sothen-mfe/webpack/react.config');
+
+const deps = require("./package.json").dependencies;
 
 module.exports = (env, argv) => {
   const isProduction = argv.mode === "production";
-
-  console.log('isProduction', isProduction);
-  console.log('process.env.PROD_APP1', process.env.PROD_APP1);
-  console.log('process.env.DEV_APP1', process.env.DEV_APP1);
-  console.log('process.env.PROD_APP1', process.env.PROD_APP1);
-  console.log('process.env.DEV_APP2', process.env.DEV_APP2);
   
-  return {
-    entry: path.resolve(__dirname, "src", "index.ts"),
+  return merge(commonWebpack, {
     mode: process.env.NODE_ENV || "development",
-    output: {
-      path: path.resolve(__dirname, 'dist'),
-      filename: 'index_bundle.js',
-      publicPath: '/'
-    },
     devServer: {
       port: 3000,
-      open: true,
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-      },
-      historyApiFallback: true,
-    },
-    resolve: {
-      extensions: [".ts", ".tsx", ".js"],
-    },
-    module: {
-      rules: [
-        {
-          test: /\.(js|jsx|tsx|ts)$/,
-          loader: "ts-loader",
-          exclude: /node_modules/,
-        },
-      ],
     },
     plugins: [
-      new HtmlWebpackPlugin({
-        template: path.resolve(__dirname, "public", "index.html"),
-      }),
       new ModuleFederationPlugin({
         name: "host",
         remotes: {
@@ -67,5 +36,5 @@ module.exports = (env, argv) => {
         },
       }),
     ],
-  }
+  })
 };
