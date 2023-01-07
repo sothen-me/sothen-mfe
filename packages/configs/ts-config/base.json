@@ -12,13 +12,7 @@
     "noUnusedParameters": true,
     "preserveWatchOutput": true,
     "skipLibCheck": true,
-    "strict": true,
-
-    "allowJs": true,
-    "allowSyntheticDefaultImports": true,
-    "noFallthroughCasesInSwitch": true,
-    "resolveJsonModule": true,
-    "noEmit": false
+    "strict": true
   },
   "exclude": [
     "node_modules"

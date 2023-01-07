@@ -8,7 +8,7 @@ type ContainerAppProps = {
 export const ContainerApp = ({ AppOne, AppTwo }: ContainerAppProps) => {
   return (
     <div>
-      <div>
+      <div style={{ backgroundColor: '#000' }}>
         <h1>CONTAINER</h1>
         <div>
           <React.Suspense fallback={<>Carregando...</>}>

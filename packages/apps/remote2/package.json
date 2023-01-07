@@ -9,12 +9,12 @@
     "clean": "rm -rf dist"
   },
   "devDependencies": {
+    "@sothen-mfe/ts-config": "*",
+    "@sothen-mfe/webpack": "*",
+    "@sothen/eslint-config": "0.0.2",
     "@types/node": "^15.0.3",
     "@types/react": "^18.0.20",
     "@types/react-dom": "^18.0.6",
-    "@sothen/eslint-config": "0.0.2",
-    "@sothen-mfe/ts-config": "*",
-    "@sothen-mfe/webpack": "*",
     "html-webpack-plugin": "5.3.1 ",
     "serve": "11.3.2",
     "ts-loader": "^9.1.2",
@@ -25,6 +25,8 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
+    "@sothen-mfe/react": "*",
+    "@sothen-mfe/tokens": "*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.2"

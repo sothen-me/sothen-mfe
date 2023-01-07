@@ -1,6 +1,14 @@
+import { Button, Heading, Text } from '@sothen-mfe/react'
+
 const App = () => (
   <div>
-    <h1>Remote app one</h1>
+    <Heading>Remote app one</Heading>
+    <Text>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rutrum,
+      nisl vitae feugiat blandit, tellus libero bibendum augue, eu tincidunt
+      urna dolor a erat.
+    </Text>
+    <Button>Botão customizado</Button>
   </div>
 )
 
